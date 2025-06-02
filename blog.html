@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/all.css" />
   </head>
   <body>
@@ -18,16 +19,20 @@
         <div class="role">
           <div class="role-picture"></div>
           <div class="role-introduce">
-            <h1 class="h1-1">BLOG</h1>
-            <p class="p1-1">前端工程師 & 職涯諮詢師</p>
+            <h1 data-aos="fade-up" class="h1-1">BLOG</h1>
+            <p data-aos="fade-up" class="p1-1">前端工程師 & 職涯諮詢師</p>
           </div>
         </div>
         <section class="backgroundcolor">
-          <div class="new-blog">
+          <div data-aos="fade-up" class="new-blog">
             <div class="blog-picture">
-              <img src="./img/page2/About Section.png" alt="電腦" />
+              <img
+                data-aos="fade-up"
+                src="./img/page2/About Section.png"
+                alt="電腦"
+              />
             </div>
-            <div class="blog-content">
+            <div data-aos="fade-up" class="blog-content">
               <div class="newpost">
                 <time>2024/10/21</time>
                 <div class="tag1">
@@ -44,12 +49,12 @@
               </div>
             </div>
           </div>
-          <div class="search">
+          <div data-aos="fade-up" class="search">
             <img src="./img/放大鏡.png" alt="搜尋" />
             <input type="text" placeholder="搜尋您感興趣的文章" />
           </div>
           <div class="blogpart">
-            <div class="allblog">
+            <div data-aos="fade-up" class="allblog">
               <div class="blog-intro">
                 <img
                   src="./img/page2/d-photo1.png"
@@ -250,7 +255,7 @@
               </div>
             </div>
           </div>
-          <div class="pagination">
+          <div data-aos="fade-up" class="pagination">
             <ul class="page-area">
               <li class="arrow">
                 <a href="#">&lt;</a>
@@ -279,7 +284,7 @@
             </ul>
           </div>
         </section>
-        <div class="infomatiom">
+        <div data-aos="fade-up" class="infomatiom">
           <p class="p1-14">alysewang@hexschool.com</p>
           <div class="icon2">
             <ul>
@@ -316,5 +321,28 @@
         <p class="p1-11">© 2025 Alyse Wang. All rights reserved.</p>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // ─── 全域設定 ───
+        disable: false, // 何時停用 AOS：可填 'phone' / 'tablet' / 'mobile'，或直接給布林值、表達式、函式
+        startEvent: "DOMContentLoaded", // AOS 什麼事件被觸發時才開始初始化
+        initClassName: "aos-init", // 元素在初始化完成後會先加上的類名
+        animatedClassName: "aos-animate", // 動畫正式啟動時套用的類名
+        useClassNames: false, // 若設為 true，會把 `data-aos` 的值做為類名，在滾動時一併加上
+        disableMutationObserver: false, // 是否關閉 MutationObserver 自動偵測 DOM 變動（進階）
+        debounceDelay: 50, // 視窗尺寸改變時的 debounce 間隔（毫秒）
+        throttleDelay: 99, // 滾動事件的 throttle 間隔（毫秒）
+
+        // ─── 可用 `data-aos-*` 覆寫的項目 ───
+        offset: 120, // 觸發動畫時，元素與視窗的距離（px）
+        delay: 0, // 動畫延遲 0–3000 ms，步進 50 ms
+        duration: 800, // 動畫時長 0–3000 ms，步進 50 ms
+        easing: "ease", // 動畫預設 easing 函式
+        once: false, // true 表示動畫只在第一次向下滾動時播放
+        mirror: false, // true 表示滾過元素後向上滑回可再次播放（鏡像效果）
+        anchorPlacement: "top-bottom", // 判定元素相對視窗的位置來觸發動畫，例如 'top-bottom' 代表元素頂端到視窗底端
+      });
+    </script>
   </body>
 </html>
