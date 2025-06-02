@@ -1,0 +1,20 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@import "reset.scss";
+@import "var.scss";
+@import "nav.scss";
+@import "role.scss";
+@import "service.scss";
+@import "blog-show.scss";
+@import "consult-area.scss";
+@import "newspaper.scss";
+@import "follow-me.scss";
+@import "footer.scss";
+@import "_new-blog.scss";
+@import "_search.scss";
+@import "_blogpart.scss";
+@import "page.scss";
+@import "infomation.scss";
+@import "blog-content.scss";

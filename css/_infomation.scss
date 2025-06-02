@@ -1,0 +1,33 @@
+.infomatiom {
+  border-top: 1px solid var(--theme-secondary);
+  background-color: #fbfbfb;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 312px;
+  .p1-14 {
+    font-size: 32px;
+    font-weight: 500;
+    height: 1.5;
+  }
+  .icon2 {
+    ul {
+      display: flex;
+      gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  .infomatiom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .infomatiom {
+    display: none;
+  }
+}

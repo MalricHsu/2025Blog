@@ -1,0 +1,165 @@
+.newspaper {
+  width: 100%;
+  display: flex;
+  .newspaper-role {
+    width: 50%;
+    height: 834px;
+    background-image: url("../img/page1/photo9.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .newpaper-content {
+    width: 50%;
+    height: 834px;
+    background-image: url("../img/page1/HeroSection2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 5%;
+    .content-with-us {
+      max-width: 800px;
+      height: 490px;
+      background-color: #fff;
+      padding: 80px;
+      .h3-2 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 4%;
+      }
+      .p1-8 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 3%;
+        span {
+          color: var(--theme-primary);
+        }
+      }
+      input {
+        display: block;
+        margin-top: 1%;
+        padding: 8px 16px;
+        border: none;
+        background-color: #f1f1f1;
+        font-size: 20px;
+        width: 100%;
+        height: 46px;
+      }
+      .btn-2 {
+        border: 1px solid var(--theme-primary);
+        border-radius: 40px;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: var(--theme-primary);
+        background-color: #fff;
+        margin-top: 4%;
+        &:hover {
+          background-color: var(--theme-primary);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .newspaper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .newspaper-role {
+      width: 100%;
+    }
+    .newpaper-content {
+      width: 100%;
+      height: auto;
+      .content-with-us {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .newspaper {
+    .newpaper-content {
+      .content-with-us {
+        max-width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding: 40px 24px;
+        .h3-2 {
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 1.5;
+          margin-bottom: 4%;
+        }
+        .p1-8 {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1.5;
+          margin-bottom: 3%;
+          span {
+            color: var(--theme-primary);
+          }
+        }
+        input {
+          display: block;
+          margin-top: 1%;
+          padding: 8px 16px;
+          border: none;
+          background-color: #f1f1f1;
+          font-size: 20px;
+          width: 100%;
+          height: 46px;
+        }
+        .btn-2 {
+          border: 1px solid var(--theme-primary);
+          border-radius: 40px;
+          padding: 8px 16px;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.5;
+          color: var(--theme-primary);
+          background-color: #fff;
+          margin-top: 4%;
+          &:hover {
+            background-color: var(--theme-primary);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .newspaper {
+    .newspaper-role {
+      width: 100%;
+      height: 350px;
+    }
+  }
+  .newspaper {
+    .newpaper-content {
+      .content-with-us {
+        max-width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding: 40px 24px;
+        .h3-2 {
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 1.5;
+          margin-bottom: 4%;
+        }
+      }
+    }
+  }
+}
