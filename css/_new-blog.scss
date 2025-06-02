@@ -2,39 +2,47 @@
   width: 100%;
   display: flex;
   border: 1px solid var(--theme-secondary);
+
   .blog-picture {
+    width: 50vw;
+    height: 640px;
+
     img {
       width: 100%;
-      height: 640px;
+      height: 100%;
       object-fit: cover;
       object-position: center;
       display: block;
     }
-    width: 50vw;
-    height: 640px;
   }
+
   .blog-content {
     width: 50vw;
     height: 640px;
     display: flex;
     flex-direction: column;
-    padding: 80px 120px 80px 0px;
-    margin: 0;
+    padding: 80px 120px 80px 0;
+
     .newpost {
       margin-left: 5%;
+
       img {
         margin-top: 10%;
       }
+
       time {
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         margin-bottom: 1%;
       }
+
       .tag1 {
         display: flex;
         align-items: center;
         gap: 2%;
+        margin-bottom: 2%;
+
         a {
           text-decoration: none;
           font-size: 24px;
@@ -43,6 +51,7 @@
           margin-bottom: 1%;
           color: var(--theme-primary);
         }
+
         .newblog {
           font-size: 16px;
           color: #fff;
@@ -52,18 +61,21 @@
           padding: 6px 12px;
         }
       }
+
       .h2-5 {
         font-size: 28px;
         font-weight: 700;
         line-height: 1.5;
-        margin-bottom: 1%;
+        margin-bottom: 2%;
       }
+
       .p1-12 {
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
-        margin-bottom: 2%;
+        margin-bottom: 5%;
       }
+
       .readblog {
         padding: 8px 16px;
         color: var(--theme-secondary);
@@ -84,19 +96,62 @@
   }
 }
 
+// Breakpoint for tablets and medium screens
 @media (max-width: 1255px) {
   .new-blog {
-    width: 100%;
-    display: flex;
     flex-direction: column;
+
     .blog-picture {
-      width: 100vw;
-      height: 50%;
+      width: 100%;
     }
     .blog-content {
       width: 100%;
-      height: 25%;
-      padding: 48px 12px;
+      gap: 20%;
+    }
+
+    .blog-picture {
+      height: auto;
+    }
+
+    .blog-content {
+      height: auto;
+      padding: 48px 24px;
+    }
+  }
+}
+
+@media (max-width: 395px) {
+  .new-blog {
+    flex-direction: column;
+
+    .blog-picture {
+      width: 100%;
+      height: 300px;
+    }
+    .blog-content {
+      width: 100%;
+      height: auto;
+      padding: 32px 16px;
+      gap: 100px;
+      .newpost {
+        margin-left: 0;
+        .tag1 {
+          align-items: center;
+          gap: 8px;
+
+          a {
+            font-size: 18px;
+          }
+        }
+
+        .h2-5 {
+          font-size: 24px;
+        }
+
+        .p1-12 {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
