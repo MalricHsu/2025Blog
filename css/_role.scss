@@ -95,16 +95,16 @@
       }
     }
   }
-}
-.intro {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  padding: 80px 40px;
-  margin: 0 auto;
-  margin-bottom: 16px;
+  .intro {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 80px 40px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -132,25 +132,25 @@
       }
     }
   }
-}
-.intro {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  padding: 40px 24px;
-  margin: 0 auto;
-  margin-bottom: 16px;
-  .p1-2 {
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.5;
+  .intro {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 40px 24px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    .p1-2 {
+      color: #000;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 390px) {
   .role {
     width: 100%;
     .role-picture {
