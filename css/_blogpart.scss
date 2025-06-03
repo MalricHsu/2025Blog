@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: 1255px) {
+@media (max-width: 1296px) {
   .blogpart {
     max-width: 1920px;
     margin: 0 auto;
@@ -86,6 +86,9 @@
         max-width: 40%;
         margin-top: 1%;
         margin-bottom: 3%;
+        img {
+          width: 100%;
+        }
       }
     }
   }

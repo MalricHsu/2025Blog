@@ -2,7 +2,7 @@
   margin-left: 16%;
   margin-right: auto;
   margin-top: 5%;
-  position: relative;
+  position: sticky;
   max-width: 416px;
   margin-bottom: 3%;
 
@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: 1255px) {
+@media (max-width: 1296px) {
   .search {
     margin: 0 auto;
     margin-top: 5%;
